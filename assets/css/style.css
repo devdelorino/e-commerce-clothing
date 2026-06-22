@@ -64,9 +64,6 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
-  /* to make the text on top of image surely */
-  z-index: 1;
 }
 
 /* footer */
