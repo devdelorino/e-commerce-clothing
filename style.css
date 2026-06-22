@@ -5,17 +5,83 @@
 }
 
 header {
-  background-color: lightblue;
   display: flex;
   align-items: center;
-  justify-content:space-around;
-  height: 50px;
+  justify-content: space-around;
+  height: 4rem;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: gray;
 }
 
-main {
-  background-color: lightcoral;
+.logo-link-header {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.shop-link-header {
+  font-size: 1rem;
+}
+
+.cart-link-header,
+.profile-link-header {
+  height: 1.2rem;
+  width: 1.2rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-tagline-n-background-image {
+  position: relative;
+}
+
+.home-background-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-tagline {
+  position: absolute;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+
+  /* to make this center inside a container*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  /* to make the text on top of image surely */
+  z-index: 1;
 }
 
 footer {
   background-color: lightgreen;
 }
+
+
+/* tablet and up*/
+@media (min-width: 768px) {
+  header {
+    height: 5rem;
+  }
+
+  .logo-link-header {
+    font-size: 1.8rem;
+  }
+
+  .shop-link-header {
+    font-size: 1.6rem;
+  }
+
+  .cart-link-header,
+  .profile-link-header {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {}
