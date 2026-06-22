@@ -4,11 +4,9 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  height: 2000px;
-
+html {
+  scroll-behavior: smooth;
 }
-
 
 .clothes-nav {
   position: sticky;
@@ -31,4 +29,66 @@ body {
 .t-shirts-text {
   text-align: center;
   margin: 0.8rem 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  row-gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.product-container {
+  height: 100%;
+  width: 70%;
+}
+
+.product-image {
+  object-fit: cover;
+  object-position: center;
+  height: 80%;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 0.6rem;
+  box-shadow: 0px 0px 20px 0px rgba(150, 150, 150, 0.2);
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* tablet and up*/
+@media (min-width: 768px) {
+
+  /* main */
+  .t-shirts-text {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2.8rem;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+
+  /* main */
+  .t-shirts-text {
+    font-size: 2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+
+  }
 }
