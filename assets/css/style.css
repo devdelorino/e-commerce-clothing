@@ -1,9 +1,11 @@
+/* make all of the elements with these style */
 * {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
+/* header */
 header {
   /* to make it stick to the top */
   position: sticky;
@@ -22,10 +24,14 @@ header {
 .logo-link-header {
   font-size: 1.2rem;
   font-weight: 900;
+  text-decoration: none;
+  color: black;
 }
 
 .shop-link-header {
   font-size: 1rem;
+  text-decoration: none;
+  color: black;
 }
 
 .cart-link-header,
@@ -36,6 +42,7 @@ header {
   object-position: center;
 }
 
+/* main */
 .home-tagline-n-background-image {
   position: relative;
 }
@@ -62,13 +69,37 @@ header {
   z-index: 1;
 }
 
+/* footer */
 footer {
-  background-color: lightgreen;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-size: 0.7rem;
+  padding: 1rem 0;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.logo-footer,
+.quick-links-text-footer,
+.follow-us-text-footer {
+  margin-bottom: 0.4rem;
+}
+
+.quick-links-footer,
+.follow-us-link-footer {
+  text-decoration: none;
+  color: rgb(173, 173, 173);
+}
 
 /* tablet and up*/
 @media (min-width: 768px) {
+  /* header */
   header {
     height: 5rem;
   }
@@ -87,14 +118,30 @@ footer {
     width: 1.8rem;
   }
 
+  /* main */
   .home-tagline {
     font-size: 2.8rem;
+  }
+
+  /* footer */
+  footer {
+    font-size: 1.2rem;
   }
 }
 
 /* desktop */
 @media (min-width: 1024px) {
+  /* main */
   .home-tagline {
     font-size: 4.5rem;
+  }
+
+  /* footer */
+  footer {
+    padding: 2rem 0;
+  }
+
+  .logo-footer {
+    font-size: 2.8rem;
   }
 }
