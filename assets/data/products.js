@@ -1,6 +1,7 @@
 export const products = [
   {
     id: 'prod-mk8z1a-001',
+    category: 't-shirts',
     image: 'acdc-classic-logo-with-lightning-bolt-mens-premium-t-shirt.jpg',
     name: 'AC/DC Classic Logo With Lightning Bolt',
     price: 799
