@@ -1,3 +1,4 @@
+/*----- RESET THE DEFAULT VALUE FOR EVERY ELEMENT -----*/
 * {
   margin: 0;
   padding: 0;
@@ -5,16 +6,32 @@
   color: rgb(74 49 41);
 }
 
+/*----- BODY'S DEFAULT VALUE -----*/
 body {
   padding: 3% 6%;
   background-color: rgb(244 241 235);
 }
 
 /*----- MAIN -----*/
+
+.back-to-shop-button {
+  font-size: 1.2rem;
+  font-weight:500;
+  display: flex;
+  background-color: rgb(244 241 235);
+  border: none;
+  margin-top: 3rem;
+}
+
+.back-image {
+  margin-right: 0.6rem;
+}
+
+
 .product-container {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .product-image-container {
@@ -97,4 +114,3 @@ body {
   border-width: 1px;
   margin-bottom: 5rem;
 }
-
