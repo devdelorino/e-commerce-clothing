@@ -78,4 +78,11 @@ body {
   body {
     padding: 0 13.5%;
   }
+
+  .product-section-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 0.8rem;
+  }
 }
