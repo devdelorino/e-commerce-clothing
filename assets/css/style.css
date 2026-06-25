@@ -10,12 +10,31 @@ body {
   background-color: rgb(244 241 235);
 }
 
-/*----- TABLET AND UP -----*/
-@media (min-width: 768px) {
-
+.story-container {
+  margin-top: 3rem;
+  background-color: rgb(74 49 41);
+  padding: 3rem 2rem;
 }
+
+.story-title {
+  font-family: 'DM Serif Display', sans-serif;
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+.moss-italian {
+  font-style: italic;
+  font-family: 'DM Serif Display', sans-serif;
+  color: white;
+}
+
+.story-description {
+  color: white;
+  line-height: 1.8rem;
+}
+
+/*----- TABLET AND UP -----*/
+@media (min-width: 768px) {}
 
 /* DESKTOP */
-@media (min-width: 1024px) {
-
-}
+@media (min-width: 1024px) {}
