@@ -8,7 +8,7 @@
 
 /*----- BODY'S DEFAULT VALUE -----*/
 body {
-  padding: 3% 6%;
+  padding: 0% 6%;
   background-color: rgb(244 241 235);
 }
 
@@ -69,4 +69,13 @@ body {
   font-weight: 600;
   font-size: 1.2rem;
   margin: 0 5% 5% 5%;
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+  /*----- BODY'S DEFAULT VALUE -----*/
+  body {
+    padding: 0 13.5%;
+  }
 }
