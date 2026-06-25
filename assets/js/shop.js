@@ -26,6 +26,7 @@ document.querySelector('.js-headwear-button').addEventListener('click', () => {
 /*----- FUNCTION THAT GENERATE PRODUCTS -----*/
 function renderProducts(categoryParam) {
   let productsHTML = '';
+  let totalProductsHTML = 0;
 
   products.forEach((product) => {
     if (categoryParam === product.category || categoryParam === 'all') {
@@ -42,8 +43,11 @@ function renderProducts(categoryParam) {
           </div>
         </div>
       `;
+
+      totalProductsHTML += 1;
     }
   });
 
-  document.querySelector('.product-section-grid').innerHTML = productsHTML;
+  document.querySelector('.js-product-section-grid').innerHTML = productsHTML;
+  document.querySelector('.js-total-products').innerHTML = `${totalProductsHTML} items`;
 }
