@@ -67,6 +67,52 @@ body {
   width: 100%;
 }
 
+/*----- SHOP BY CATEGORY SECTION -----*/
+.shop-by-category-container {
+  margin-top: 4rem;
+}
+
+.shop-by-category-title {
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+.shop-by-category-description {
+  font-weight: 500;
+  line-height: 1.6rem;
+  margin-top: 0.8rem;
+}
+
+.product-container {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1.8rem;
+  background-color: rgb(227 219 207);
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-info {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.product-category-name {
+  margin: 1.8rem 1.5rem;
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+.arrow-icon {
+  margin: 1.8rem 1.5rem;
+  padding: 1rem;
+  border: solid;
+  border-width: 1px;
+}
+
 /*----- TABLET AND UP -----*/
 @media (min-width: 768px) {}
 
