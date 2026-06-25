@@ -2,7 +2,10 @@
 footer {
   margin-top: 4rem;
   background-color: rgb(74 49 41);
-  padding: 0 6%;
+}
+
+.sections {
+  margin: 0 6%;
 }
 
 .shop-section-footer,
@@ -27,7 +30,7 @@ footer {
   border-top: solid;
   border-top-width: 1px;
   border-top-color: white;
-  padding: 6% 0;
+  padding: 4% 6%;
 }
 
 /* tablet and up*/
