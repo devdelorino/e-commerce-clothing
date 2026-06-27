@@ -32,6 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
+  height: 100%;
 }
 
 .product-image-container {
@@ -43,7 +44,7 @@ body {
 .product-image {
   object-fit: cover;
   object-position: center;
-  height: 80%;
+  height: 100%;
   width: 100%;
   margin-bottom: 0.6rem;
 }
