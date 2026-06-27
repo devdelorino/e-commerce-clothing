@@ -12,6 +12,23 @@ body {
   background-color: rgb(244 241 235);
 }
 
+.cart-title-container {
+  margin-top: 3rem;
+  width: 10rem;
+}
+
+.cart-title {
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+.cart-quantity-text {
+  margin-top: 1rem;
+}
+
+.cart-container {
+  height: 20rem;
+  padding: 1.5rem;
+}
 
 /*----- TABLET AND UP -----*/
 @media (min-width: 768px) {}
