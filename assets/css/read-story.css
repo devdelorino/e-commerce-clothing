@@ -1,0 +1,121 @@
+/*----- RESET THE DEFAULT VALUE FOR EVERY ELEMENT -----*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(74 49 41);
+}
+
+/*----- BODY'S DEFAULT VALUE -----*/
+body {
+  padding: 0 6% 2% 6%;
+  background-color: rgb(244 241 235);
+}
+
+/*----- VIDEO TITLE CONTAINER -----*/
+.video-title-container {
+  margin: 12rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-title-video {
+  position: absolute;
+  object-fit: cover;
+  height: 22rem;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+.title-container {
+  font-family: 'DM Serif Display', sans-serif;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
+/*----- DESCRIPTION SECTION -----*/
+.white-italic-text {
+  font-style: italic;
+  font-family: 'DM Serif Display', sans-serif;
+  color: white;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.description-container-1 {
+  padding: 3rem 2rem;
+  background-color: rgb(227 219 207);
+}
+
+.brown-italic-text {
+  font-style: italic;
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+.description-title {
+  font-family: 'DM Serif Display', sans-serif;
+  font-size: 1.5rem;
+}
+
+.description {
+  margin-top: 1rem;
+  line-height: 1.6rem;
+}
+
+.description-container-2 {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  background-color: rgb(227 219 207);
+}
+
+.shop-all-button {
+  margin-top: 3.5rem;
+  display: flex;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.read-story-button-text {
+  color: rgb(74 49 41);
+}
+
+.read-story-button-text,
+.read-story-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: solid;
+  border-color: rgb(74 49 41);
+  border-width: 1px;
+}
+
+.read-story-icon-container {
+  border-left-width: 0;
+}
+
+.read-story-button-icon {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+/*----- TABLET AND UP -----*/
+@media (min-width: 768px) {}
+
+/*----- DESKTOP -----*/
+@media (min-width: 1024px) {
+
+  /*----- BODY'S DEFAULT VALUE -----*/
+  body {
+    padding: 0 13.5% 0.6% 13.5%;
+  }
+}

@@ -44,6 +44,7 @@ body {
 
 .read-story-button {
   display: flex;
+  width: fit-content;
 }
 
 .read-story-button-text {

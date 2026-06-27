@@ -20,7 +20,10 @@ export function renderCategories() {
 
   } else {
     renderProducts('all');
-  } 
+  }
+
+  /*----- REMOVE CATEGORY IN localStorage -----*/
+  localStorage.removeItem('category');
 
   /*----- RENDERING A CATEGORY IN TITLE BUTTONS  -----*/
   document.querySelector('.js-all-button').addEventListener('click', () => {
