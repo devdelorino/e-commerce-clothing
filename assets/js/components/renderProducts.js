@@ -2,7 +2,25 @@ import { products } from "../../data/products.js";
 
 /*----- CALLING THE FUNCTION THAT GENERATE PRODUCTS AFTER CLICKING -----*/
 export function renderCategories() {
-  renderProducts('all');
+
+/*----- GENERATING CATEGORY FROM HOME PAGE -----*/
+  const category = localStorage.getItem('category');
+
+  if (category === 'tees') {
+    renderProducts('tees');
+
+  } else if (category === 'bottoms') {
+    renderProducts('bottoms');
+
+  } else if (category === 'outerwear') {
+    renderProducts('outerwear');
+
+  } else if (category === 'headwear') {
+    renderProducts('headwear');
+
+  } else if (category === 'all') {
+    renderProducts('all');
+  }
 
   document.querySelector('.js-all-button').addEventListener('click', () => {
     renderProducts('all');
@@ -34,7 +52,7 @@ export function renderProducts(categoryParam) {
   products.forEach((product) => {
     if (categoryParam === product.category || categoryParam === 'all') {
       productsHTML += `
-        <a href="../../../view-product.html">
+        <a href="../../../view-product.html" class="product-container-link">
           <div class="product-container" data-id="${product.id}">
             <div class="product-image-container">
               <img src="assets/images/products/${product.image}" class="product-image">
@@ -53,7 +71,7 @@ export function renderProducts(categoryParam) {
     }
   });
 
-
+  /*----- GENERATING PRODUCT TITLES -----*/
   let productsTitleHTML = '';
 
   if (categoryParam === 'tees') {
@@ -103,6 +121,7 @@ export function renderProducts(categoryParam) {
     `;
   }
 
+  /*----- RENDERING IN HTML -----*/
   document.querySelector('.js-product-section-grid').innerHTML = productsHTML;
   document.querySelector('.js-clothes-title').innerHTML = productsTitleHTML;
   document.querySelector('.js-total-products').innerHTML = `${totalProductsHTML} items`;

@@ -38,6 +38,10 @@ body {
   cursor: pointer;
 }
 
+.product-container-link {
+  text-decoration: none;
+}
+
 .product-container {
   display: flex;
   flex-direction: column;
