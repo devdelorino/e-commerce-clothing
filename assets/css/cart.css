@@ -12,22 +12,25 @@ body {
   background-color: rgb(244 241 235);
 }
 
-.cart-title-container {
-  margin-top: 3rem;
-  width: 10rem;
+.empty-cart-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
-.cart-title {
+.empty-cart-title {
   font-family: 'DM Serif Display', sans-serif;
 }
 
-.cart-quantity-text {
-  margin-top: 1rem;
+.empty-cart-description-text {
+  margin-top: 0.6rem;
 }
 
-.cart-container {
-  height: 20rem;
-  padding: 1.5rem;
+.empty-shop-link {
+  margin-top: 0.6rem;
 }
 
 /*----- TABLET AND UP -----*/
