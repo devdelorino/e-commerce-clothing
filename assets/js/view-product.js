@@ -73,7 +73,7 @@ function renderProduct() {
 function editQuantity() {
   /*----- CREATE A DEFAULT QUANTITY VALUE -----*/
 
-  document.querySelector('.js-quantity-input').value = 1;
+  document.querySelector('.js-quantity-input').value = quantity;
 
   document.querySelector('.js-subtract-button').addEventListener('click', () => {
     quantity = Number(document.querySelector('.js-quantity-input').value);
@@ -104,11 +104,14 @@ function chooseSizeNSaveToCart() {
   });
 
   document.querySelector('.js-add-to-bag-button').addEventListener('click', () => {
+    quantity = Number(document.querySelector('.quantity-input').value);
 
-    /*----- IF THERE'S NO SIZE CLICKED -----*/
+    /*----- IF THERE'S NO SIZE CLICKED (FASLY VALUE) -----*/
     if (!sizeResult) {
 
-    } else {
+      /*----- IF THERE'S SIZE CLICKED (TRUTHY VALUE) AND QUANTITY INPUT IS NOT 0 -----*/
+    } else if (sizeResult && quantity !== 0) {
+
       /*----- FIND MATCHING CART, AND IF IT FINDS IT, IT GETS THE WHOLE INDEX ONCE THE CONDITION IS TRUE AT A SPECIFIC ITERATION -----*/
       const findMatchingCart = cart.find(cartItem => cartItem.id === selectedProductId && cartItem.size === sizeResult);
 
@@ -128,6 +131,8 @@ function chooseSizeNSaveToCart() {
       }
 
       localStorage.setItem('localStorageCart', JSON.stringify(cart));
+
+      console.log(cart);
     }
   });
 }
