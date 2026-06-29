@@ -2,7 +2,7 @@ import { products } from "../data/products.js";
 import { cart } from "../data/cart.js";
 
 const selectedProductId = localStorage.getItem('selectedProductId');
-let quantity = 1;
+let quantity = 0;
 
 renderProduct();
 editQuantity();
@@ -51,7 +51,7 @@ function renderProduct() {
             <button class="subtract-button js-subtract-button">
               -
             </button>
-            <input type="text" class="quantity-input js-quantity-input">
+            <input type="number" class="quantity-input js-quantity-input">
             <button class="add-button js-add-button">
               +
             </button>
@@ -73,9 +73,10 @@ function renderProduct() {
 function editQuantity() {
   /*----- CREATE A DEFAULT QUANTITY VALUE -----*/
 
-  document.querySelector('.js-quantity-input').value = quantity;
+  document.querySelector('.js-quantity-input').value = 1;
 
   document.querySelector('.js-subtract-button').addEventListener('click', () => {
+    quantity = Number(document.querySelector('.js-quantity-input').value);
     if (quantity > 1) {
       quantity -= 1;
 
@@ -84,6 +85,7 @@ function editQuantity() {
   });
 
   document.querySelector('.js-add-button').addEventListener('click', () => {
+    quantity = Number(document.querySelector('.js-quantity-input').value);
     quantity += 1;
 
     document.querySelector('.js-quantity-input').value = quantity;
