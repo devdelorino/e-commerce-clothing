@@ -17,7 +17,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   margin-bottom: 10rem;
 }
 
@@ -32,6 +32,7 @@ body {
 
 .empty-shop-link {
   margin-top: 0.6rem;
+  padding: 0.2rem 0.6rem;
 }
 
 /*----- BAG WITH PRODUCT/S STYLES -----*/
