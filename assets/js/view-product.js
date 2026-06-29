@@ -2,7 +2,7 @@ import { products } from "../data/products.js";
 import { cart } from "../data/cart.js";
 
 const selectedProductId = localStorage.getItem('selectedProductId');
-let quantity = 0;
+let quantity = 1;
 
 renderProduct();
 editQuantity();
