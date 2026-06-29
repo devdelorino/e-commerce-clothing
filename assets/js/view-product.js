@@ -5,7 +5,7 @@ const selectedProductId = localStorage.getItem('selectedProductId');
 
 renderProduct();
 editQuantity();
-chooseSizeNSaveCart();
+chooseSizeNSaveToCart();
 
 /*----- RENDER PRODUCT IN HTML -----*/
 function renderProduct() {
@@ -68,8 +68,30 @@ function renderProduct() {
   document.querySelector('.js-product-container').innerHTML = productHTML;
 }
 
+/*----- EDIT PRODUCT'S QUANTITY -----*/
+function editQuantity() {
+  /*----- CREATE A DEFAULT QUANTITY VALUE -----*/
+  let quantity = 1;
 
-function chooseSizeNSaveCart() {
+  document.querySelector('.js-quantity-input').value = quantity;
+
+  document.querySelector('.js-subtract-button').addEventListener('click', () => {
+    if (quantity > 1) {
+      quantity -= 1;
+
+      document.querySelector('.js-quantity-input').value = quantity;
+    }
+  });
+
+  document.querySelector('.js-add-button').addEventListener('click', () => {
+    quantity += 1;
+
+    document.querySelector('.js-quantity-input').value = quantity;
+  });
+}
+
+/*----- CHOOSE THE SIZE FOR THE PRODUCT AND SAVE IT TO CART -----*/
+function chooseSizeNSaveToCart() {
   /*----- LOOP THROUGH SIZES AND GET THE CLICKED SIZE AND SAVE IT IN VARIABLE BY USING DATASET -----*/
   let sizeResult = '';
 
@@ -105,26 +127,5 @@ function chooseSizeNSaveCart() {
 
       localStorage.setItem('localStorageCart', JSON.stringify(cart));
     }
-  });
-}
-
-function editQuantity() {
-  /*----- CREATE A DEFAULT QUANTITY VALUE -----*/
-  let quantity = 1;
-
-  document.querySelector('.js-quantity-input').value = quantity;
-
-  document.querySelector('.js-subtract-button').addEventListener('click', () => {
-    if (quantity > 1) {
-      quantity -= 1;
-
-      document.querySelector('.js-quantity-input').value = quantity;
-    }
-  });
-
-  document.querySelector('.js-add-button').addEventListener('click', () => {
-    quantity += 1;
-
-    document.querySelector('.js-quantity-input').value = quantity;
   });
 }
