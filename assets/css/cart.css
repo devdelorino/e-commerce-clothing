@@ -38,12 +38,14 @@ body {
 .product-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
   margin-top: 1.5rem;
 }
 
 .shopping-bag-title {
   margin-top: 4rem;
+  text-align: center;
 }
 
 .row-1-product-container {
