@@ -6,32 +6,38 @@ renderCart();
 function renderCart() {
   if (cart.length === 0) {
 
-    document.querySelector('.js-cart-container').innerHTML = `
-    <div class=empty-cart-container>
-      <h1 class="empty-cart-title">
-        CART
-      </h1>
-      <p class="empty-cart-description-text">
-        Your cart is currently empty.
-      </p>
-      <a class="empty-shop-link" href="shop.html">Continue shopping</a>
-    </div>
-  `;
+    document.querySelector('.js-empty-cart-container').innerHTML = `
+      <div class=empty-cart-container>
+        <h1 class="empty-cart-title">
+          CART
+        </h1>
+        <p class="empty-cart-description-text">
+          Your cart is currently empty.
+        </p>
+        <a class="empty-shop-link" href="shop.html">Continue shopping</a>
+      </div>
+    `;
+
+    document.querySelector('.js-cart-title').innerHTML = '';
+    document.querySelector('.js-products-grid').innerHTML = '';
+    document.querySelector('.js-order-summary-container').innerHTML = '';
 
   } else {
     let subtotal = 0;
     let shipping = 10;
     let total = 0;
-    let cartHTML = `
-    <h3 class="shopping-bag-title">
-      YOUR CART
-    </h3>
-  `;
+    let cartTitleHTML = `
+      <h3 class="shopping-bag-title">
+        YOUR CART
+      </h3>
+    `;
+    let productHTML = '';
+    let orderSummaryHTML = '';
 
     cart.forEach((cart) => {
       products.forEach((product) => {
         if (cart.id === product.id) {
-          cartHTML += `
+          productHTML += `
           <div class="product-container">
             <div class="row-1-product-container">
               <div class="product-image-container">
@@ -71,7 +77,7 @@ function renderCart() {
 
     total = subtotal + shipping;
 
-    cartHTML += `
+    orderSummaryHTML += `
       <div class="order-summary-container">
         <h2 class="order-summary-title">
           ORDER SUMMARY
@@ -107,7 +113,9 @@ function renderCart() {
       </div>
     `;
 
-    document.querySelector('.js-cart-container').innerHTML = cartHTML;
+    document.querySelector('.js-cart-title').innerHTML = cartTitleHTML;
+    document.querySelector('.js-products-grid').innerHTML = productHTML;
+    document.querySelector('.js-order-summary-container').innerHTML = orderSummaryHTML;
 
     deleteCart();
   }
