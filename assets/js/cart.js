@@ -18,9 +18,7 @@ function renderCart() {
       </div>
     `;
 
-    document.querySelector('.js-cart-title').innerHTML = '';
-    document.querySelector('.js-products-grid').innerHTML = '';
-    document.querySelector('.js-order-summary-container').innerHTML = '';
+    document.querySelector('.js-cart-container').innerHTML = '';
 
   } else {
     let subtotal = 0;
