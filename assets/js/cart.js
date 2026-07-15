@@ -56,11 +56,11 @@ function renderCart() {
                 ${cart.size}
               </h4>
               <div class="button-container">
-                <div class="add-button">
+                <div class="add-button js-add-button" data-id="${cart.id}">
                   +
                 </div>
                 <input type="number" class="quantity-input" value="${cart.quantity}">
-                <div class="subtract-button">
+                <div class="subtract-button js-subtract-button" data-id="${cart.id}">
                   -
                 </div>
               </div>
@@ -116,10 +116,56 @@ function renderCart() {
     document.querySelector('.js-order-summary-container').innerHTML = orderSummaryHTML;
 
     deleteCart();
+
+    editQuantity();
   }
 }
 
+/*----- EDIT PRODUCT QUANTITY -----*/
+function editQuantity() {
 
+  /*----- ADD QUANTITY BUTTON -----*/
+  document.querySelectorAll('.js-add-button').forEach((button) => {
+    button.addEventListener('click', () => {
+      const productId = button.dataset.id;
+
+      cart.forEach((cartItem) => {
+        if (cartItem.id === productId) {
+          cartItem.quantity += 1;
+        }
+      });
+
+      console.log(cart);
+
+      localStorage.setItem('localStorageCart', JSON.stringify(cart));
+
+      renderCart();
+    });
+  });
+
+  /*----- SUBTRACT QUANTITY BUTTON -----*/
+  document.querySelectorAll('.js-subtract-button').forEach((button) => {
+    button.addEventListener('click', () => {
+      const productId = button.dataset.id;
+
+      cart.forEach((cartItem, index) => {
+        if (cartItem.id === productId) {
+          cartItem.quantity -= 1;
+
+          if (cartItem.quantity <= 0) {
+            cart.splice(index, 1);
+          }
+
+          console.log(cart);
+
+          localStorage.setItem('localStorageCart', JSON.stringify(cart));
+
+          renderCart();
+        }
+      });
+    });
+  });
+}
 
 /*----- DELETE PRODUCT FROM CART -----*/
 function deleteCart() {
