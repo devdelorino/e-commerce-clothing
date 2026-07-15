@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(74 49 41);
+  color: #111827;
 }
 
 /*----- BODY'S DEFAULT VALUE -----*/
 body {
   padding: 0 6% 2% 6%;
-  background-color: rgb(244 241 235);
+  background-color: white;
 }
 
 /*----- VIDEO TITLE CONTAINER -----*/
@@ -52,7 +52,13 @@ body {
 
 .description-container-1 {
   padding: 3rem 2rem;
-  background-color: rgb(227 219 207);
+  background-color: #EA580C;
+}
+
+.description-title,
+.description,
+span {
+  color: white;
 }
 
 .brown-italic-text {
@@ -73,7 +79,7 @@ body {
 .description-container-2 {
   margin-top: 4rem;
   padding: 3rem 2rem;
-  background-color: rgb(227 219 207);
+  background-color: #EA580C;
 }
 
 .shop-all-button {
@@ -84,7 +90,7 @@ body {
 }
 
 .read-story-button-text {
-  color: rgb(74 49 41);
+  color: white;
 }
 
 .read-story-button-text,
@@ -94,7 +100,7 @@ body {
   align-items: center;
   padding: 1rem;
   border: solid;
-  border-color: rgb(74 49 41);
+  border-color: white;
   border-width: 1px;
 }
 

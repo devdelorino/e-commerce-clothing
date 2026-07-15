@@ -3,20 +3,20 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(74 49 41);
+  color: #111827;
 }
 
 /*----- BODY'S DEFAULT VALUE -----*/
 body {
   padding: 0 6% 2% 6%;
-  background-color: rgb(244 241 235);
+  background-color: white;
 }
 
 /*----- STORY SECTION -----*/
 .story-container {
   display: flex;
   margin-top: 3rem;
-  background-color: rgb(74 49 41);
+  background-color: #EA580C;
   padding: 3rem 2rem;
 }
 
@@ -45,6 +45,7 @@ body {
 .read-story-button {
   display: flex;
   width: fit-content;
+  text-decoration: none;
 }
 
 .read-story-button-text {
@@ -94,7 +95,7 @@ body {
   flex-direction: column;
   width: 100%;
   margin-top: 1.8rem;
-  background-color: rgb(227 219 207);
+  background-color: #EA580C;
   cursor: pointer;
 }
 
@@ -111,6 +112,7 @@ body {
 .product-category-name {
   margin: 1.8rem 1.5rem;
   font-family: 'DM Serif Display', sans-serif;
+  color: white;
 }
 
 .arrow-icon {

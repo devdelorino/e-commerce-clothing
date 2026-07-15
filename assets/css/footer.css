@@ -1,7 +1,7 @@
 /*----- FOOTER -----*/
 footer {
   margin-top: 4rem;
-  background-color: rgb(74 49 41);
+  background-color: #EA580C;
 }
 
 .sections {
@@ -47,7 +47,7 @@ footer {
   .sections {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
   }
 
   .logo-footer {

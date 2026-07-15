@@ -1,8 +1,7 @@
 header {
   position: sticky;
   top: 2%;
-  background: rgb(244 241 235);
-
+  background: white;
   display: flex;
   justify-content: center;
 }
@@ -17,6 +16,7 @@ header {
   width: 100%;
   border: solid;
   border-width: 1px 1px 1px 0;
+  border-color: #111827;
 }
 
 .nav-left {

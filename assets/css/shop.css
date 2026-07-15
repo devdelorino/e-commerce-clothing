@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(74 49 41);
+  color: #111827;
 }
 
 /*----- BODY'S DEFAULT VALUE -----*/
 body {
   padding: 0 6% 2% 6%;
-  background-color: rgb(244 241 235);
+  background-color: white;
 }
 
 .clothes-header {
