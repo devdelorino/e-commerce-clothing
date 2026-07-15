@@ -8,7 +8,7 @@ export function renderHeader() {
 
     <a href="index.html" class="nav-inner logo-link-header">
       <div class="logo-header">
-        DENVER.CO
+        DLRN
       </div>
     </a>
     <a href="cart.html" class="nav-inner">

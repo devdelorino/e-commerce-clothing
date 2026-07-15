@@ -71,7 +71,7 @@ export function renderFooter() {
       </div>
     </div>
     <div class="logo-footer">
-      DENVER.CO
+      DLRN
     </div>
   `;
 }
