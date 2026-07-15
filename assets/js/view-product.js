@@ -1,5 +1,10 @@
 import { products } from "../data/products.js";
 import { cart } from "../data/cart.js";
+import { renderHeader } from "./components/header.js";
+import { renderFooter } from "./components/footer.js";
+
+renderHeader();
+renderFooter();
 
 const selectedProductId = localStorage.getItem('selectedProductId');
 let quantity = 1;

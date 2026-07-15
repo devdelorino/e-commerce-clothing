@@ -1,6 +1,10 @@
 import { cart } from "../data/cart.js";
 import { products } from "../data/products.js";
+import { renderHeader } from "./components/header.js";
+import { renderFooter } from "./components/footer.js";
 
+renderHeader();
+renderFooter();
 renderCart();
 
 function renderCart() {
