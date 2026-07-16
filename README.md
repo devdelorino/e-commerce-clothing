@@ -77,7 +77,7 @@
 
 ### Deployment
 
-- GitHub Pages
+- Vercel
 
 ---
 
