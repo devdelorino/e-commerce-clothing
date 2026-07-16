@@ -1,4 +1,4 @@
-<h1 align="center">DLRN 👕</h1>
+<h1 align="center">DLRN</h1>
 
 <p align="center">
   A modern and responsive e-commerce clothing web application built with HTML, CSS, and Vanilla JavaScript, featuring a clean user experience and modular architecture.
@@ -21,7 +21,7 @@
 
 ---
 
-## 📸 Preview
+##Preview
 
 <p align="center">
   <img src="screenshots/index.png" width="100%">
