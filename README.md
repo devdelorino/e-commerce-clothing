@@ -21,7 +21,7 @@
 
 ---
 
-##Preview
+## Preview
 
 <p align="center">
   <img src="screenshots/index.png" width="100%">
@@ -49,7 +49,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 - Responsive, mobile-first design
 - Browse clothing products
@@ -61,7 +61,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -81,7 +81,7 @@
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 ### Shopping Experience
 
@@ -111,7 +111,7 @@
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Denver Delorino**
 
